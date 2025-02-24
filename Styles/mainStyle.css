@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+
+.topnav {
+    margin-top: 1%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topnav #myLinks {
+    display: none;
+    position: fixed;
+    opacity: 80%;
+    background-color: #444; /* Ensure the menu has a background */
+    width: 100%;
+    left: 0;
+    padding: 10px;
+    z-index: 999;
+}
+
+.topnav a.active {
+    color: white;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.topnav #myLinks a {
+    color: white;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.topnav #myLinks a:hover {
+    background-color: #555; /* Hover effect */
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    padding: 10px;
+    color: white;
+    right: 0;
+    margin-right: 5px;
+    top: 0;
+}
+
+.active {
+    background-color: #278ebe;
+    color: white;
+}
+
+.regLinks {
+    display: none;
+}
+
+@media (min-width:481px) {
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav a.active {
+        display: none;
+    }
+
+    .topnav #myLinks a{
+        display: none;
+    }
+
+    .regLinks {
+        display: block;
+    }
+
+    .regLinks a{
+        padding: 10px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+    .regLinks a:hover:not(#regActive) {
+        background-color: #1e6b8f;
+        border-radius: 5px;
+        padding: 20px 30px;
+    }
+
+    #regActive {
+        color: white;
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: #227ba4;
+    }
+
+    .topnav {
+        padding: 20px;
+        padding-left: 0px;
+        font-size: 18px;
+        background-color: #278ebe;
+        border:2px solid black;
+        border-radius: 5%;
+    }
+}
+
+@media (min-width:900px) {
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav a.active {
+        display: none;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .regLinks {
+        display: flex;
+        gap: 20px; 
+    }
+
+    .regLinks a{
+        padding: 20px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+
+    .regLinks a:hover:not(#regActive) {
+        background-color: #1e6b8f;
+        border-radius: 5px;
+    }
+
+    #regActive {
+        display: block;
+        padding: 20px 30px;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #227ba4;
+        color: white;
+        text-decoration: none;
+    }
+
+    .topnav {
+        display: flex;
+        position: relative; 
+        width: 90%;
+        margin-right: 5px;
+        border:2px solid black;
+        border-radius: 5%;
+        padding: 20px;
+        background-image: linear-gradient(to right, #278ebe, #054a6a);
+        font-size: 20px;
+    }
+}
