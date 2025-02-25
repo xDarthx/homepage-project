@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Styles/mainStyle.css">
-    <title>Jacob's Portfolio</title>
-</head>
-<body>
-    <nav class="topnav" id="navBar">
-        <a href="#home" class="active">Home</a>
-        <div id="myLinks">
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Styles/mainStyle.css">
+        <script src="https://kit.fontawesome.com/6b1ff1c828.js" crossorigin="anonymous"></script>
+        <title>Jacob's Portfolio</title>
+    </head>
+    <body>
+        <nav class="topnav" id="navBar">
+            <a href="#home" class="active">Home</a>
+            <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="regLinks">
+                <a href="#home" id="regActive">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
+                <i class="fa fa-bars" style="font-size: 40px;" ></i>
+            </a>
+        </nav>
+        <br>
+        <br><br>
+        <div class="mainDiv">
+            <article class="aboutMeContainer">
+                <img id="profileImg" src="Images/jacobGrant.jpg" alt="Picture of Jacob">
+                <p id="aboutMe">
+                    orem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ad facilis accusamus necessitatibus aspernatur sint, enim voluptatum iure at aperiam blanditiis,
+                    expedita veniam natus recusandae dolore eos impedit, consequuntur voluptatibus.
+                    Voluptatibus est dolorem blanditiis aliquam?
+                    Voluptatum, hic! Nihil, ipsa veniam? Similique a quae cumque natus libero modi?
+                    Eaque quo corporis mollitia quam ut velit sapiente a reiciendis voluptate saepe,
+                    molestias iure incidunt corrupti itaque aperiam accusamus dolore eos expedita eligendi error quaerat repudiandae.
+                    Eius veritatis doloribus fuga ratione eligendi? 
+                    Illo quae,
+                </p>
+            </article>
+            <div class="socialsContainer">
+                <a href=""><i class="fa-brands fa-github-square"></i></a>
+
+            </div>
         </div>
-        <div class="regLinks">
-            <a href="#home" id="regActive">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
-            <i class="fa fa-bars" style="font-size: 40px;" ></i>
-        </a>
-    </nav>
-    <br>
-    <br><br>
-    <div class="mainDiv">
-        <img id="profileImg" src="Images/jacobGrant.jpg" alt="Picture of Jacob">
-        <article id="aboutMe"></article>
-    </div>
-    <Script src="Scripts/mainScript.js"></Script>
-</body>
+        <Script src="Scripts/mainScript.js"></Script>
+    </body>
 </html>
