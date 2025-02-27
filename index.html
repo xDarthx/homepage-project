@@ -12,15 +12,14 @@
         <nav class="topnav" id="navBar">
             <a href="#home" class="active">Home</a>
             <div id="myLinks">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
                 <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="regLinks">
-                <a href="#home" id="regActive">Home</a>
-                <a href="#news">News</a>
+                <a href="#about" id="regActive">About</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <a href="#about">About</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
                 <i class="fa fa-bars" style="font-size: 40px;" ></i>
@@ -28,7 +27,9 @@
         </nav>
         <br>
         <br><br>
-        <div class="mainDiv">
+        <div class="mainDiv" id="about">
+            <h1 class="namePlate">Jacob Grant</h1>
+            <h2 id="titleAM">About Me</h1>
             <article class="aboutMeContainer">
                 <img id="profileImg" src="Images/jacobGrant.jpg" alt="Picture of Jacob">
                 <p id="aboutMe">
@@ -44,33 +45,78 @@
                 </p>
             </article>
             <div class="socialsContainer">
-                <a href="jacob.grant@my.okcu.edu" class="mediaIcons" >
+                <a href="jacob.grant@my.okcu.edu" target="_blank" class="mediaIcons" >
                     <i class="fas fa-envelope fa-5x"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jacob-grant-7b0710290/" class="mediaIcons" >
+                <a href="https://www.linkedin.com/in/jacob-grant-7b0710290/" target="_blank" class="mediaIcons" >
                     <i class="fab fa-linkedin fa-5x"></i>
                 </a>
-                <a href="https://github.com/xDarthx" class="mediaIcons" >
+                <a href="https://github.com/xDarthx" target="_blank" class="mediaIcons" >
                     <i class="fab fa-github fa-5x"></i>
                 </a>
-                <a href="https://www.instagram.com/jacob.av7/" class="mediaIcons" >
+                <a href="https://www.instagram.com/jacob.av7/" target="_blank" class="mediaIcons" >
                     <i class="fab fa-instagram fa-5x"></i>
                 </a>
             </div>
         </div>
         <div class="projectsDiv">
-            <div class="project-container">
+            <h1 class="namePlate">My Projects</h1>
+            <div class="project-container" id="projects">
                 <div class="project-card">
-                    <img class="project-image" src="Images/project1.jpg" alt="Project 1">
+                    <img class="project-image" src="Images/dummyImage.jpg" alt="Project 1">
                     <div class="project-title">Project Title 1</div>
                 </div>
             
                 <div class="project-card">
-                    <img class="project-image" src="Images/project2.jpg" alt="Project 2">
+                    <img class="project-image" src="Images/dummyImage.jpg" alt="Project 2">
                     <div class="project-title">Project Title 2</div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="Images/dummyImage.jpg" alt="Project 3">
+                    <div class="project-title">Project Title 3</div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="Images/dummyImage.jpg" alt="Project 4">
+                    <div class="project-title">Project Title 4</div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="Images/dummyImage.jpg" alt="Project 5">
+                    <div class="project-title">Project Title 5</div>
+                </div>
+
+                <div class="project-card">
+                    <img class="project-image" src="Images/dummyImage.jpg" alt="Project 6">
+                    <div class="project-title">Project Title 6</div>
                 </div>
             </div>
         </div>
+        <div class="contactDiv" id="contact">
+            <div class="textInfo">
+                <h1>Contact Me</h1>
+                <h3>Work Phone</h3>
+                <p>(444)444-4444</p>
+                <h3>Socials</h3>
+                <a href="jacob.grant@my.okcu.edu" target="_blank" class="mediaIcons" >
+                    <i class="fas fa-envelope fa-5x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jacob-grant-7b0710290/" target="_blank" class="mediaIcons" >
+                    <i class="fab fa-linkedin fa-5x"></i>
+                </a>
+                <a href="https://github.com/xDarthx" class="mediaIcons" target="_blank" >
+                    <i class="fab fa-github fa-5x"></i>
+                </a>
+                <a href="https://www.instagram.com/jacob.av7/" class="mediaIcons" target="_blank" >
+                    <i class="fab fa-instagram fa-5x"></i>
+                </a>
+            </div>
+            <img src="Images/jacobGrant2.jpg" id="contactImg" alt="Another Picture of Jacob">
+        </div>
+        <a href="#about" id="backButton">
+            <i class="fas fa-arrow-up fa-5x"></i>
+        </a>
         <Script src="Scripts/mainScript.js"></Script>
     </body>
 </html>
